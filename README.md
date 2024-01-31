@@ -44,12 +44,11 @@ Refer to the [Test Case Spreadsheet](https://docs.google.com/spreadsheets/d/1vOi
 
 - **Keianggoro**
   - Email: keianggoro12@gmail.com
-  - [keianggoro](https://github.com/keianggoro12)
-
+  - GitHub: [![GitHub Logo](https://img.shields.io/badge/GitHub-keianggoro12-blue?style=social&logo=github)](https://github.com/keianggoro12)
 
 - **Rayhan**
   - Email: tuanpenguin12@gmail.com
-  - [rayhan](https://github.com/rayariff)
+  - GitHub: [![GitHub Logo](https://img.shields.io/badge/GitHub-rayariff-blue?style=social&logo=github)](https://github.com/rayariff)
 
 - **Neni**
   - Email: neninurhaeni4051@gmail.com
