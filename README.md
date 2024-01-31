@@ -44,9 +44,12 @@ Refer to the [Test Case Spreadsheet](https://docs.google.com/spreadsheets/d/1vOi
 
 - **Keianggoro**
   - Email: keianggoro12@gmail.com
+  - [keianggoro](https://github.com/keianggoro12)
+
 
 - **Rayhan**
   - Email: tuanpenguin12@gmail.com
+  - [rayhan](https://github.com/rayariff)
 
 - **Neni**
   - Email: neninurhaeni4051@gmail.com
