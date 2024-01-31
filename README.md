@@ -1,6 +1,6 @@
 # API Automation Testing using Rest Assured
 
-This repository contains the API automation testing project using Rest Assured. The project is collaborated on by Keianggoro, Rayhan, and Neni.
+This repository contains the API automation testing project using Rest Assured, developed by Keianggoro, Rayhan, and Neni.
 
 ## Project Overview
 
@@ -16,7 +16,41 @@ This repository contains the API automation testing project using Rest Assured. 
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository and navigate to the project directory:
 
    ```bash
    git clone https://github.com/Kelompok-2-Project/QE-API.git
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   mvn clean install
+   ```
+
+## Running Tests
+
+Execute the following command to run the tests:
+
+```bash
+mvn clean verify
+```
+
+## Test Case Documentation
+
+Refer to the [Test Case Spreadsheet](https://docs.google.com/spreadsheets/d/1vOiRSU0w4vXTKcBU2CDNy3gBow6ha8OTchf0a5d4Ok0/edit) for detailed information on each test case.
+
+## Contributors
+
+- **Keianggoro**
+  - Email: keianggoro12@gmail.com
+
+- **Rayhan**
+  - Email: tuanpenguin12@gmail.com
+
+- **Neni**
+  - Email: neninurhaeni4051@gmail.com
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
