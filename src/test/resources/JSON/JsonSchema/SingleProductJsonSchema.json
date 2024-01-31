@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "stock": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "photo_product": {
+          "type": "string"
+        },
+        "toko": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "photo_profile": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "user_name",
+            "photo_profile"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "description",
+        "category",
+        "stock",
+        "price",
+        "photo_product",
+        "toko"
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}
