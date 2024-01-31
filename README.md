@@ -19,4 +19,4 @@ This repository contains the API automation testing project using Rest Assured. 
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/yourusername/api-automation-restassured.git](https://github.com/Kelompok-2-Project/QE-API.git)https://github.com/Kelompok-2-Project/QE-API.git
+   git clone https://github.com/Kelompok-2-Project/QE-API.git
