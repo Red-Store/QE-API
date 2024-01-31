@@ -1,13 +1,22 @@
-<<<<<<< HEAD
-# QUALITY-ENGINEER
-=======
-# Getting started with REST API testing with Serenity and Cucumber 6
+# API Automation Testing using Rest Assured
 
-This is a simple starter project for Serenity with Cucumber 6 and RestAssured
+This repository contains the API automation testing project using Rest Assured. The project is collaborated on by Keianggoro, Rayhan, and Neni.
 
-## Want to learn more?
-For more information about Serenity BDD, you can read the [**Serenity BDD Book**](https://serenity-bdd.github.io/theserenitybook/latest/index.html), the official online Serenity documentation source. Other sources include:
-* **[Byte-sized Serenity BDD](https://www.youtube.com/channel/UCav6-dPEUiLbnu-rgpy7_bw/featured)** - tips and tricks about Serenity BDD
-* [**Serenity BDD Blog**](https://johnfergusonsmart.com/category/serenity-bdd/) - regular articles about Serenity BDD
-* [**The Serenity Dojo**](https://www.serenity-dojo.com) - Tailored BDD and Test Automation Training and Mentoring
->>>>>>> 39c6095 (second)
+## Project Overview
+
+- **Base URL:** [https://l3n.my.id/](https://l3n.my.id/)
+- **Test Case Documentation:** [Test Cases](https://docs.google.com/spreadsheets/d/1vOiRSU0w4vXTKcBU2CDNy3gBow6ha8OTchf0a5d4Ok0/edit)
+
+## Getting Started
+
+### Prerequisites
+
+- Java installed
+- Maven installed
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone [https://github.com/yourusername/api-automation-restassured.git](https://github.com/Kelompok-2-Project/QE-API.git)https://github.com/Kelompok-2-Project/QE-API.git
