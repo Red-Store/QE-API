@@ -43,7 +43,6 @@ public class RedstoreAPI {
         SerenityRest.given()
                 .header("Authorization", Constants.TOKEN);
     }
-
 //    @Step("Update User")
 //    public void updateUser(File json){
 //        SerenityRest.given()
@@ -138,5 +137,7 @@ public class RedstoreAPI {
         SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
                 .pathParam("order_id", order_id);
     }
+
+
 
 }

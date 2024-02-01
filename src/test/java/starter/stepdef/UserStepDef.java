@@ -241,7 +241,7 @@ public class UserStepDef {
         return formData;
     }
 
-    @Given("Delete post when logged in")
+    @Given("Delete user when logged in")
     public void deletePostWhenLoggedIn() {
         redstoreAPI.deleteUser();
     }
@@ -251,7 +251,7 @@ public class UserStepDef {
         SerenityRest.when().delete(RedstoreAPI.DELETE_POST);
     }
 
-    @Given("Delete post without logged in")
+    @Given("Delete user without logged in")
     public void deletePostWithoutLoggedIn() {
     }
 }

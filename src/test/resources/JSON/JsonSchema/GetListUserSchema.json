@@ -1,0 +1,452 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "total_page": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "photo_profile": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "deleted_at": {
+              "type": "null"
+            },
+            "status_user": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "user_name",
+            "email",
+            "role",
+            "photo_profile",
+            "created_at",
+            "deleted_at",
+            "status_user"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "photo_profile": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "deleted_at": {
+              "type": "null"
+            },
+            "status_user": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "user_name",
+            "email",
+            "role",
+            "photo_profile",
+            "created_at",
+            "deleted_at",
+            "status_user"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "photo_profile": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "deleted_at": {
+              "type": "null"
+            },
+            "status_user": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "user_name",
+            "email",
+            "role",
+            "photo_profile",
+            "created_at",
+            "deleted_at",
+            "status_user"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "photo_profile": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "deleted_at": {
+              "type": "null"
+            },
+            "status_user": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "user_name",
+            "email",
+            "role",
+            "photo_profile",
+            "created_at",
+            "deleted_at",
+            "status_user"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "photo_profile": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "deleted_at": {
+              "type": "null"
+            },
+            "status_user": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "user_name",
+            "email",
+            "role",
+            "photo_profile",
+            "created_at",
+            "deleted_at",
+            "status_user"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "photo_profile": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "deleted_at": {
+              "type": "null"
+            },
+            "status_user": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "user_name",
+            "email",
+            "role",
+            "photo_profile",
+            "created_at",
+            "deleted_at",
+            "status_user"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "photo_profile": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "deleted_at": {
+              "type": "null"
+            },
+            "status_user": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "user_name",
+            "email",
+            "role",
+            "photo_profile",
+            "created_at",
+            "deleted_at",
+            "status_user"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "photo_profile": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "deleted_at": {
+              "type": "null"
+            },
+            "status_user": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "user_name",
+            "email",
+            "role",
+            "photo_profile",
+            "created_at",
+            "deleted_at",
+            "status_user"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "photo_profile": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "deleted_at": {
+              "type": "null"
+            },
+            "status_user": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "user_name",
+            "email",
+            "role",
+            "photo_profile",
+            "created_at",
+            "deleted_at",
+            "status_user"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "photo_profile": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "deleted_at": {
+              "type": "string"
+            },
+            "status_user": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "user_name",
+            "email",
+            "role",
+            "photo_profile",
+            "created_at",
+            "deleted_at",
+            "status_user"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "total_page",
+    "data"
+  ]
+}
