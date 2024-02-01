@@ -1,0 +1,418 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "order_id": {
+              "type": "string"
+            },
+            "order": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "product": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "price": {
+                          "type": "integer"
+                        },
+                        "stock": {
+                          "type": "integer"
+                        },
+                        "photo_product": {
+                          "type": "string"
+                        },
+                        "toko": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "price",
+                        "stock",
+                        "photo_product",
+                        "toko"
+                      ]
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "gross_amount": {
+                      "type": "integer"
+                    },
+                    "va_number": {
+                      "type": "integer"
+                    },
+                    "bank": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "product",
+                    "quantity",
+                    "status",
+                    "gross_amount",
+                    "va_number",
+                    "bank"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "order_id",
+            "order"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "order_id": {
+              "type": "string"
+            },
+            "order": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "product": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "price": {
+                          "type": "integer"
+                        },
+                        "stock": {
+                          "type": "integer"
+                        },
+                        "photo_product": {
+                          "type": "string"
+                        },
+                        "toko": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "price",
+                        "stock",
+                        "photo_product",
+                        "toko"
+                      ]
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "gross_amount": {
+                      "type": "integer"
+                    },
+                    "va_number": {
+                      "type": "integer"
+                    },
+                    "bank": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "product",
+                    "quantity",
+                    "status",
+                    "gross_amount",
+                    "va_number",
+                    "bank"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "order_id",
+            "order"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "order_id": {
+              "type": "string"
+            },
+            "order": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "product": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "price": {
+                          "type": "integer"
+                        },
+                        "stock": {
+                          "type": "integer"
+                        },
+                        "photo_product": {
+                          "type": "string"
+                        },
+                        "toko": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "price",
+                        "stock",
+                        "photo_product",
+                        "toko"
+                      ]
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "gross_amount": {
+                      "type": "integer"
+                    },
+                    "va_number": {
+                      "type": "integer"
+                    },
+                    "bank": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "product",
+                    "quantity",
+                    "status",
+                    "gross_amount",
+                    "va_number",
+                    "bank"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "order_id",
+            "order"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "order_id": {
+              "type": "string"
+            },
+            "order": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "product": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "price": {
+                          "type": "integer"
+                        },
+                        "stock": {
+                          "type": "integer"
+                        },
+                        "photo_product": {
+                          "type": "string"
+                        },
+                        "toko": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "price",
+                        "stock",
+                        "photo_product",
+                        "toko"
+                      ]
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "gross_amount": {
+                      "type": "integer"
+                    },
+                    "va_number": {
+                      "type": "integer"
+                    },
+                    "bank": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "product",
+                    "quantity",
+                    "status",
+                    "gross_amount",
+                    "va_number",
+                    "bank"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "order_id",
+            "order"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "order_id": {
+              "type": "string"
+            },
+            "order": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "product": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "price": {
+                          "type": "integer"
+                        },
+                        "stock": {
+                          "type": "integer"
+                        },
+                        "photo_product": {
+                          "type": "string"
+                        },
+                        "toko": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "price",
+                        "stock",
+                        "photo_product",
+                        "toko"
+                      ]
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "gross_amount": {
+                      "type": "integer"
+                    },
+                    "va_number": {
+                      "type": "integer"
+                    },
+                    "bank": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "product",
+                    "quantity",
+                    "status",
+                    "gross_amount",
+                    "va_number",
+                    "bank"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "order_id",
+            "order"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}

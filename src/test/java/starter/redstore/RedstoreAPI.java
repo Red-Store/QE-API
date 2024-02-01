@@ -14,8 +14,14 @@ public class RedstoreAPI {
     public static String GET_USER = Constants.BASE_URL + "/users";
     public static String UPDATE_USER = Constants.BASE_URL + "/users";
     public static String DELETE_POST = Constants.BASE_URL + "/users";
-
     public static String CREATE_PRODUCT = Constants.BASE_URL + "/products";
+    public static String GET_CART = Constants.BASE_URL + "/carts";
+    public static String ADD_CART = Constants.BASE_URL + "/carts/{product_id}";
+    public static String UPDATE_CART = Constants.BASE_URL + "/carts/{cart_id}";
+    public static String DELETE_CART = Constants.BASE_URL + "/carts/{cart_id}";
+    public static String CREATE_ORDER = Constants.BASE_URL + "/orders";
+    public static String GET_ORDER = Constants.BASE_URL + "/users/orders";
+    public static String CANCEL_ORDER = Constants.BASE_URL + "/orders/{id}";
 
     @Step("Post Login User")
     public void postLoginUser(File json){
@@ -72,6 +78,65 @@ public class RedstoreAPI {
     public void deleteUser (){
         SerenityRest.given()
                 .header("Authorization", Constants.DELETE_TOKEN);
+    }
+    @Step("Get my cart")
+    public void getCart (){
+        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI);
+    }
+    @Step("Add product to cart")
+    public void addProductToCart (String product_id){
+        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
+                .pathParam("product_id", product_id);
+    }
+    @Step("Add product to cart invalid product_id")
+    public void addProductToCartInvalidId (String product_id){
+        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
+                .pathParam("product_id", product_id);
+    }
+    @Step("Add product to cart without product_id")
+    public void addProductToCartWithoutId (String product_id) {
+        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
+                .pathParam("product_id", product_id);
+    }
+    @Step("Add product to cart without login")
+    public void addProductToCartWithoutLogin (String product_id) {
+        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
+                .pathParam("product_id", product_id);
+    }
+    @Step("Update product to cart")
+    public void updateProductToCart (String cart_id){
+        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
+                .pathParam("cart_id", cart_id);
+    }
+    @Step("Update product to cart invalid param")
+    public void updateCartInvalid (String cart_id){
+        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
+                .pathParam("cart_id", cart_id);
+    }
+    @Step("Update cart without login")
+    public void updateCartWithoutLogin (){
+        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI);
+    }
+    @Step("Delete cart")
+    public void deleteCart(String cart_id){
+        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
+                .pathParam("cart_id", cart_id);
+    }
+    @Step("Create Order")
+    public void createOrder(File json){
+        SerenityRest.given()
+                .header("Authorization", Constants.TOKEN_KEI)
+                .contentType(ContentType.JSON)
+                .body(json);
+    }
+    @Step("Get my order")
+    public void getOrder (){
+        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI);
+    }
+    @Step("Cancel order")
+    public void cancelOrder (String order_id){
+        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
+                .pathParam("order_id", order_id);
     }
 
 }
