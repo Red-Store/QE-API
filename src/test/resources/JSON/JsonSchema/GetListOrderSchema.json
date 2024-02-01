@@ -1,0 +1,540 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "total_page": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "order": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "price"
+                  ]
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "bank": {
+                  "type": "string"
+                },
+                "gross_amount": {
+                  "type": "integer"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "product",
+                "quantity",
+                "created_at",
+                "bank",
+                "gross_amount",
+                "address",
+                "status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "price"
+                  ]
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "bank": {
+                  "type": "string"
+                },
+                "gross_amount": {
+                  "type": "integer"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "product",
+                "quantity",
+                "created_at",
+                "bank",
+                "gross_amount",
+                "address",
+                "status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "price"
+                  ]
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "bank": {
+                  "type": "string"
+                },
+                "gross_amount": {
+                  "type": "integer"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "product",
+                "quantity",
+                "created_at",
+                "bank",
+                "gross_amount",
+                "address",
+                "status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "price"
+                  ]
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "bank": {
+                  "type": "string"
+                },
+                "gross_amount": {
+                  "type": "integer"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "product",
+                "quantity",
+                "created_at",
+                "bank",
+                "gross_amount",
+                "address",
+                "status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "price"
+                  ]
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "bank": {
+                  "type": "string"
+                },
+                "gross_amount": {
+                  "type": "integer"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "product",
+                "quantity",
+                "created_at",
+                "bank",
+                "gross_amount",
+                "address",
+                "status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "price"
+                  ]
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "bank": {
+                  "type": "string"
+                },
+                "gross_amount": {
+                  "type": "integer"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "product",
+                "quantity",
+                "created_at",
+                "bank",
+                "gross_amount",
+                "address",
+                "status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "price"
+                  ]
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "bank": {
+                  "type": "string"
+                },
+                "gross_amount": {
+                  "type": "integer"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "product",
+                "quantity",
+                "created_at",
+                "bank",
+                "gross_amount",
+                "address",
+                "status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "price"
+                  ]
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "bank": {
+                  "type": "string"
+                },
+                "gross_amount": {
+                  "type": "integer"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "product",
+                "quantity",
+                "created_at",
+                "bank",
+                "gross_amount",
+                "address",
+                "status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "price"
+                  ]
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "bank": {
+                  "type": "string"
+                },
+                "gross_amount": {
+                  "type": "integer"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "product",
+                "quantity",
+                "created_at",
+                "bank",
+                "gross_amount",
+                "address",
+                "status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "price"
+                  ]
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "bank": {
+                  "type": "string"
+                },
+                "gross_amount": {
+                  "type": "integer"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "product",
+                "quantity",
+                "created_at",
+                "bank",
+                "gross_amount",
+                "address",
+                "status"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "order"
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "total_page",
+    "data"
+  ]
+}

@@ -148,12 +148,12 @@ Feature: Endpoint User
       | email                   |
       | tuanpenguin12@gmail.com |
 
-  Scenario: Delete post when logged in
-    Given Delete post when logged in
+  Scenario: Delete user when logged in
+    Given Delete user when logged in
     When Send request delete posts
     Then Status code should be 200
 
-  Scenario: Delete post without logged in
-    Given Delete post without logged in
+  Scenario: Delete user without logged in
+    Given Delete user without logged in
     When Send request delete posts
     Then Status code should be 401
