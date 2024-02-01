@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "Payment": {
+          "type": "object",
+          "properties": {
+            "status_code": {
+              "type": "string"
+            },
+            "status_message": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "payment_type": {
+              "type": "string"
+            },
+            "gross_amount": {
+              "type": "integer"
+            },
+            "bank": {
+              "type": "string"
+            },
+            "va_number": {
+              "type": "integer"
+            },
+            "transaction_id": {
+              "type": "string"
+            },
+            "currency": {
+              "type": "string"
+            },
+            "transaction_time": {
+              "type": "string"
+            },
+            "fraud_status": {
+              "type": "string"
+            },
+            "expired_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status_code",
+            "status_message",
+            "status",
+            "payment_type",
+            "gross_amount",
+            "bank",
+            "va_number",
+            "transaction_id",
+            "currency",
+            "transaction_time",
+            "fraud_status",
+            "expired_at"
+          ]
+        }
+      },
+      "required": [
+        "order_id",
+        "address",
+        "Payment"
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}
