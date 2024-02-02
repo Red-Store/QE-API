@@ -58,57 +58,6 @@
             "quantity",
             "Products"
           ]
-        },
-        {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "integer"
-            },
-            "quantity": {
-              "type": "integer"
-            },
-            "Products": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "price": {
-                  "type": "integer"
-                },
-                "stock": {
-                  "type": "integer"
-                },
-                "photo_product": {
-                  "type": "string"
-                },
-                "toko": {
-                  "type": "object",
-                  "properties": {
-                    "name": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "name"
-                  ]
-                }
-              },
-              "required": [
-                "name",
-                "price",
-                "stock",
-                "photo_product",
-                "toko"
-              ]
-            }
-          },
-          "required": [
-            "id",
-            "quantity",
-            "Products"
-          ]
         }
       ]
     }

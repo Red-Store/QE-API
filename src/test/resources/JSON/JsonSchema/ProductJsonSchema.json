@@ -23,6 +23,9 @@
             "price": {
               "type": "integer"
             },
+            "stock": {
+              "type": "integer"
+            },
             "photo_product": {
               "type": "string"
             }
@@ -32,6 +35,7 @@
             "name",
             "category",
             "price",
+            "stock",
             "photo_product"
           ]
         }

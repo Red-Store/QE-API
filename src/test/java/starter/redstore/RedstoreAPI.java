@@ -103,7 +103,7 @@ public class RedstoreAPI {
     }
     @Step("Add product to cart without login")
     public void addProductToCartWithoutLogin (String product_id) {
-        SerenityRest.given();
+        SerenityRest.given().pathParam("product_id", product_id);
     }
     @Step("Update product to cart")
     public void updateProductToCart (String cart_id){
@@ -115,9 +115,9 @@ public class RedstoreAPI {
         SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
                 .pathParam("cart_id", cart_id);
     }
-    @Step("Update cart without login")
-    public void updateCartWithoutLogin (){
-        SerenityRest.given();
+    @Step("Update product to cart without")
+    public void updateCartWithoutLogin (String cart_id){
+        SerenityRest.given().pathParam("cart_id", cart_id);
     }
     @Step("Delete cart")
     public void deleteCart(String cart_id){

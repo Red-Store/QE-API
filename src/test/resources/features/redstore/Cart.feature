@@ -21,7 +21,7 @@ Feature: Endpoint Cart
     And Validate cart json schema "AddProductToCartJsonSchema.json"
     Examples:
       | product_id |
-      | 10         |
+      | 14        |
 
   Scenario Outline: Add product to cart with invalid product_id
     Given Add all product with invalid "<product_id>"
@@ -71,11 +71,14 @@ Feature: Endpoint Cart
       | cart_id |
       | 1ab     |
 
-  Scenario:  Update product to cart without login
-    Given Update product to cart without login
+  Scenario Outline:  Update product to cart without login
+    Given Update product to cart without login with "<cart_id>"
     When Send request update product to cart without login
     Then Status code should be 401
     And Response body message was "missing or malformed jwt"
+    Examples:
+      | cart_id |
+      | 12      |
 
   Scenario Outline: Delete product to cart with valid cart_id
     Given Delete product to cart with "<cart_id>"

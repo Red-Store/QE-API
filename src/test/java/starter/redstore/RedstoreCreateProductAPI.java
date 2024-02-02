@@ -55,7 +55,7 @@ public class RedstoreCreateProductAPI {
         return createProductRequestNoLogin().post(CREATE_PRODUCT);
     }
 
-    @Step("create product request without login")
+    @Step("create product request without name")
     public RequestSpecification createProductRequestNoName() {
         return RestAssured.given()
                 .contentType("multipart/form-data")
