@@ -36,8 +36,7 @@ public class UserStepDef {
 
     @Then("Status code should be {int}")
     public void statusCodeShouldBe(int statusCode) {
-        SerenityRest.then()
-                .statusCode(statusCode);
+        SerenityRest.then().statusCode(statusCode);
     }
 
     @And("Response body message was {string} and role was {string}")

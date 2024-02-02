@@ -21,7 +21,7 @@ public class RedstoreAPI {
     public static String DELETE_CART = Constants.BASE_URL + "/carts/{cart_id}";
     public static String CREATE_ORDER = Constants.BASE_URL + "/orders";
     public static String GET_ORDER = Constants.BASE_URL + "/users/orders";
-    public static String CANCEL_ORDER = Constants.BASE_URL + "/orders/{id}";
+    public static String CANCEL_ORDER = Constants.BASE_URL + "/orders/{order_id}";
 
     @Step("Post Login User")
     public void postLoginUser(File json){
@@ -82,6 +82,10 @@ public class RedstoreAPI {
     public void getCart (){
         SerenityRest.given().header("Authorization", Constants.TOKEN_KEI);
     }
+    @Step("Get my cart without login")
+    public void getCartWithoutLogin(){
+        SerenityRest.given();
+    }
     @Step("Add product to cart")
     public void addProductToCart (String product_id){
         SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
@@ -99,8 +103,7 @@ public class RedstoreAPI {
     }
     @Step("Add product to cart without login")
     public void addProductToCartWithoutLogin (String product_id) {
-        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
-                .pathParam("product_id", product_id);
+        SerenityRest.given();
     }
     @Step("Update product to cart")
     public void updateProductToCart (String cart_id){
@@ -114,7 +117,7 @@ public class RedstoreAPI {
     }
     @Step("Update cart without login")
     public void updateCartWithoutLogin (){
-        SerenityRest.given().header("Authorization", Constants.TOKEN_KEI);
+        SerenityRest.given();
     }
     @Step("Delete cart")
     public void deleteCart(String cart_id){
@@ -128,14 +131,26 @@ public class RedstoreAPI {
                 .contentType(ContentType.JSON)
                 .body(json);
     }
+    @Step("Create order without login")
+    public void createOrderWithoutLogin(File json){
+        SerenityRest.given().contentType(ContentType.JSON).body(json);
+    }
     @Step("Get my order")
     public void getOrder (){
         SerenityRest.given().header("Authorization", Constants.TOKEN_KEI);
+    }
+    @Step("Get my order without login")
+    public void getOrderWithoutLogin(){
+        SerenityRest.given();
     }
     @Step("Cancel order")
     public void cancelOrder (String order_id){
         SerenityRest.given().header("Authorization", Constants.TOKEN_KEI)
                 .pathParam("order_id", order_id);
+    }
+    @Step("Cancel order without login")
+    public void cancelOrderWithoutLogin (String order_id){
+        SerenityRest.given().pathParam("order_id", order_id);
     }
 
 

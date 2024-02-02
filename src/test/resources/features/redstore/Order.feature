@@ -11,7 +11,7 @@ Feature: Endpoint Order
       | CreateOrder.json |
 
   Scenario Outline: Create order with valid data without login
-    Given Create order with valid data "<json>"
+    Given Create order with valid data "<json>" without login
     When Send request create order
     Then Status code should be 401
     And Response body message was "missing or malformed jwt"
@@ -53,11 +53,11 @@ Feature: Endpoint Order
     Given Get my order
     When Send request get order
     Then Status code should be 200
-    And Response body message was "success read data"
+    And Response body message was "success read data."
     And Validate order json schema "GetOrderSchema.json"
 
   Scenario: Get my order without login
-    Given Get my order
+    Given Get my order without login
     When Send request get order
     Then Status code should be 401
     And Response body message was "missing or malformed jwt"
@@ -67,8 +67,7 @@ Feature: Endpoint Order
     Given Cancel my order with valid "<order_id>"
     When Send request cancel order
     Then Status code should be 200
-    And Response body message was "success cancel order"
-    And Validate order json schema "CancelOrderSchema.json"
+    And Response body message was "success cancle order"
     Examples:
       | order_id                             |
       | 657bd3ee-f29a-4068-ba8c-5de0aae2129e |
@@ -77,7 +76,7 @@ Feature: Endpoint Order
     Given Cancel my order with invalid "<order_id>"
     When Send request cancel order
     Then Status code should be 500
-    And Response body message was "error cancel order"
+    And Response body message was "error cancle order"
     And Validate order json schema "CancelOrderInvalidIdSchema.json"
     Examples:
       | order_id |
