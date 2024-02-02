@@ -51,7 +51,7 @@ Feature: Endpoint product
     And Validate product json schema "SingleProductJsonSchema.json"
     Examples:
       | product_id |
-      | 10         |
+      | 132         |
 
   Scenario Outline: Get single product with invalid product_id
     Given Get single product with <product_id>
@@ -69,8 +69,8 @@ Feature: Endpoint product
     And Response body was same with "<type>"
     And Validate product json schema "SearchProductJsonSchema.json"
     Examples:
-      | type   |
-      | asmara |
+      | type |
+      | asus |
 
   Scenario Outline:Empty product search
     Given Get product search with "<type>"
@@ -152,7 +152,7 @@ Feature: Endpoint product
     And Response body message was "missing or malformed jwt"
     Examples:
       | product_id | json             |
-      | 10         | UpdateProduct1.json |
+      | 132        | UpdateProduct1.json |
 
   Scenario Outline: Update product name with invalid product_id
     Given Update product with "<product_id>" and "<json>"
@@ -161,7 +161,7 @@ Feature: Endpoint product
     And Response body message was "you do not have permission to edit this product"
     Examples:
       | product_id | json                |
-      | 101        | UpdateProduct1.json |
+      | 101sa12    | UpdateProduct1.json |
 
   Scenario Outline: Update product description with valid product_id
     Given Update product with "<product_id>" and "<json>"
@@ -170,7 +170,7 @@ Feature: Endpoint product
     And Response body message was "success update data"
     Examples:
       | product_id | json                |
-      | 10         | UpdateProduct2.json |
+      | 132        | UpdateProduct2.json |
 
   Scenario Outline: Update product price with valid product_id
     Given Update product with "<product_id>" and "<json>"
@@ -179,7 +179,7 @@ Feature: Endpoint product
     And Response body message was "success update data"
     Examples:
       | product_id | json                |
-      | 10         | UpdateProduct3.json |
+      | 132        | UpdateProduct3.json |
 
   Scenario Outline: Update product category with valid product_id
     Given Update product with "<product_id>" and "<json>"
@@ -188,7 +188,7 @@ Feature: Endpoint product
     And Response body message was "success update data"
     Examples:
       | product_id | json                |
-      | 10         | UpdateProduct4.json |
+      | 132        | UpdateProduct4.json |
 
   Scenario Outline: Update product stock with valid product_id
     Given Update product with "<product_id>" and "<json>"
@@ -197,7 +197,7 @@ Feature: Endpoint product
     And Response body message was "success update data"
     Examples:
       | product_id | json                |
-      | 10         | UpdateProduct5.json |
+      | 132        | UpdateProduct5.json |
 
   Scenario Outline: Update product photo with valid product_id
     Given Update product with "<product_id>" and "<json>"
@@ -206,7 +206,7 @@ Feature: Endpoint product
     And Response body message was "success update data"
     Examples:
       | product_id | json                |
-      | 10         | UpdateProduct6.json |
+      | 132        | UpdateProduct6.json |
 
   Scenario: Create product with all parameters
     Given Create product with all param

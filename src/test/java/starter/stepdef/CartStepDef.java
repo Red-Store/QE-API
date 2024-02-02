@@ -73,6 +73,7 @@ public class CartStepDef {
     }
     @When("Send request add all products without login")
     public void sendRequestAddAllProductsWithoutLogin() {
+        SerenityRest.when().post(RedstoreAPI.ADD_CART);
     }
 
     //Scenario 7
@@ -93,12 +94,13 @@ public class CartStepDef {
     }
 
     //Scenario 9
-    @Given("Update product to cart without login")
-    public void updateProductToCartWithoutLogin() {
-        redstoreAPI.updateCartWithoutLogin();
+    @Given("Update product to cart without login with {string}")
+    public void updateProductToCartWithoutLogin(String cart_id) {
+        redstoreAPI.updateCartWithoutLogin(cart_id);
     }
     @When("Send request update product to cart without login")
     public void sendRequestUpdateProductToCartWithoutLogin() {
+        SerenityRest.when().put(redstoreAPI.UPDATE_CART);
     }
 
     //Scenario 10

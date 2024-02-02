@@ -294,7 +294,7 @@
               "type": "string"
             },
             "deleted_at": {
-              "type": "null"
+              "type": "string"
             },
             "status_user": {
               "type": "string"
@@ -423,7 +423,7 @@
               "type": "string"
             },
             "deleted_at": {
-              "type": "string"
+              "type": "null"
             },
             "status_user": {
               "type": "string"
