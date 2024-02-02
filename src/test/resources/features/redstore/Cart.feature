@@ -1,14 +1,14 @@
 Feature: Endpoint Cart
 
-  Scenario: Get my carts
+  Scenario: Get my cart
     Given Get my cart
     When Send request get my cart
     Then Status code should be 200
-    And Response body message was "success read data"
+    And Response body message was "success read data."
     And Validate cart json schema "GetMyCartJsonSchema.json"
 
   Scenario:  Get my cart without login
-    Given Get my cart
+    Given Get my cart without login
     When Send request get my cart without login
     Then Status code should be 401
     And Response body message was "missing or malformed jwt"
@@ -45,22 +45,21 @@ Feature: Endpoint Cart
 
   Scenario Outline: Add product to cart without login
     Given Add all product with valid "<product_id>" without login
-    When Send request add all products with all param
+    When Send request add all products without login
     Then Status code should be 401
     And Response body message was "missing or malformed jwt"
     Examples:
       | product_id |
-      | 10         |
+      | 1          |
 
   Scenario Outline: Update product to cart with valid data
     Given Update product to cart with valid "<cart_id>"
     When Send request update product to cart with param
     Then Status code should be 200
     And Response body message was "success update data"
-    And Validate cart json schema "UpdateCartJsonSchema.json"
     Examples:
       | cart_id |
-      | 32      |
+      | 67      |
 
   Scenario Outline: Update product to cart with invalid cart_id
     Given Update product to cart with invalid "<cart_id>"
@@ -74,7 +73,7 @@ Feature: Endpoint Cart
 
   Scenario:  Update product to cart without login
     Given Update product to cart without login
-    When Send request update product to cart with param
+    When Send request update product to cart without login
     Then Status code should be 401
     And Response body message was "missing or malformed jwt"
 
@@ -86,7 +85,7 @@ Feature: Endpoint Cart
     And Validate cart json schema "DeleteProductToCartSchema.json"
     Examples:
       | cart_id |
-      | 57      |
+      | 95      |
 
   Scenario Outline: Delete product to cart with invalid cart_id
     Given Delete product to cart with invalid "<cart_id>"

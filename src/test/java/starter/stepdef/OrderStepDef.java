@@ -14,7 +14,7 @@ import java.io.File;
 public class OrderStepDef {
     @Steps
     RedstoreAPI redstoreAPI;
-    //Scenario 1 & 2
+    //Scenario 1
     @Given("Create order with valid data {string}")
     public void createOrderWithValidData(String json) {
         File jsonCreateOrder = new File(Constants.REQ_BODY + json);
@@ -31,6 +31,12 @@ public class OrderStepDef {
         SerenityRest.and()
                 .assertThat()
                 .body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
+    }
+    //Scenario 2
+    @Given("Create order with valid data {string} without login")
+    public void createOrderWithValidDataWithoutLogin(String json) {
+        File jsonCreateOrder = new File(Constants.REQ_BODY + json);
+        redstoreAPI.createOrderWithoutLogin(jsonCreateOrder);
     }
     //Scenario 3
     @Given("Create order with blank address {string}")
@@ -53,7 +59,7 @@ public class OrderStepDef {
         redstoreAPI.createOrder(jsonCreateOrderInvalidData);
     }
 
-    //Scenario 6 & 7
+    //Scenario 6
     @Given("Get my order")
     public void getMyOrder() {
         redstoreAPI.getOrder();
@@ -61,6 +67,11 @@ public class OrderStepDef {
     @When("Send request get order")
     public void sendRequestGetOrder() {
         SerenityRest.when().get(RedstoreAPI.GET_ORDER);
+    }
+    //Scenario 7
+    @Given("Get my order without login")
+    public void getMyOrderWithoutLogin() {
+        redstoreAPI.getCartWithoutLogin();
     }
 
     //Scenario 8
@@ -82,7 +93,7 @@ public class OrderStepDef {
     //Scenario 10
     @Given("Cancel my order with valid {string} without login")
     public void cancelMyOrderWithValidWithoutLogin(String order_id) {
-        redstoreAPI.cancelOrder(order_id);
+        redstoreAPI.cancelOrderWithoutLogin(order_id);
     }
 
     //Scenario 11
@@ -90,4 +101,5 @@ public class OrderStepDef {
     public void cancelMyOrderWithout(String order_id) {
         redstoreAPI.cancelOrder(order_id);
     }
+
 }
